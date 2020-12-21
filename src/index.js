@@ -13,6 +13,7 @@ import {
   } from 'react-router-dom';
 import DefaultReduxPage from './pages/DefaultReduxPage/DefaultReduxPage.jsx';
 import ToggleReduxPage from './pages/ToggleReduxPage/ToggleReduxPage.jsx';
+import CreateCharacterPage from './pages/CreateCharacterPage/CreateCharacterPage.jsx';
 
 ReactDOM.render(
   <Router>
@@ -23,6 +24,7 @@ ReactDOM.render(
           <Route exact path="/"> <App/> </Route>
           <Route path="/default"> <DefaultReduxPage/> </Route>
           <Route path="/toggle"> <ToggleReduxPage/> </Route>
+          <Route path="/character"> <CreateCharacterPage/> </Route>
 
         </Switch>
       </Provider>

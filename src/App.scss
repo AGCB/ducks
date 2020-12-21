@@ -9,7 +9,10 @@
       a {
         margin: 0 20px;
         transition: background-color .3s, color .5s;
-        // transition: color .3s;
+        color: white;
+        &:visited {
+          color: rgba(365,365,365,.8);
+        }
         &:hover {
           background-color: rgba(365,365,365,.1)
         }

@@ -12,6 +12,9 @@ function App() {
           <Link to="/toggle">
             <span>custom-redux-toggle</span>
           </Link>
+          <Link to="/character">
+            <span>create character</span>
+          </Link>
         </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import './create-character.scss';
+import './toggle-redux-page.scss';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   toggleTrue,
@@ -7,7 +7,7 @@ import {
   selectToggleValue,
 } from '../../features/toggle/toggleSlice.js';
 
-const CreateCharacter = () => {
+const ToggleReduxPage = () => {
   const reduxToggleValue = useSelector(selectToggleValue);
   const dispatch = useDispatch();
 
@@ -20,11 +20,12 @@ const CreateCharacter = () => {
   }
 
   return (
-    <div className="create-character">
+    <div className="toggle-redux-page">
+      <span>toggle redux </span>
       <button onClick={handleButtonClick}
-      >{`redux toggle is ... ${String(reduxToggleValue)}`}</button>
+      >{`redux toggle value is ... ${String(reduxToggleValue)}`}</button>
     </div>
   )
 }
 
-export default CreateCharacter;
+export default ToggleReduxPage;

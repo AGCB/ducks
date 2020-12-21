@@ -1,17 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import CreateCharacter from './components/CreateCharacter/'
-import './App.css';
+import './App.scss';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <CreateCharacter />
-      </header>
+    <div className="app">
+        <div className="default-redux-state">
+          <Link to="/default">
+            <span>default-redux-state</span>
+          </Link>
+          <Link to="/toggle">
+            <span>custom-redux-toggle</span>
+          </Link>
+        </div>
     </div>
   );
 }

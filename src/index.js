@@ -4,14 +4,31 @@ import './index.css';
 import App from './App';
 import store from './app/store';
 import { Provider } from 'react-redux';
+import Header from './components/Header/Header.js';
 import * as serviceWorker from './serviceWorker';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  } from 'react-router-dom';
+import DefaultReduxPage from './pages/DefaultReduxPage/DefaultReduxPage.jsx';
+import ToggleReduxPage from './pages/ToggleReduxPage/ToggleReduxPage.jsx';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </React.StrictMode>,
+  <Router>
+    <React.StrictMode>
+      <Provider store={store}>
+        <Header/>
+        <Switch>
+          <Route exact path="/"> <App/> </Route>
+          <Route path="/default"> <DefaultReduxPage/> </Route>
+          <Route path="/toggle"> <ToggleReduxPage/> </Route>
+
+        </Switch>
+      </Provider>
+    </React.StrictMode>
+  </Router>
+  ,
   document.getElementById('root')
 );
 

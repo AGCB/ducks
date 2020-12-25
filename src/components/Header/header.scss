@@ -1,0 +1,20 @@
+.app-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-decoration: none;
+  a {
+    text-decoration: none;
+  }
+  .app-logo {
+    width: 50px;
+    border: 1px solid lightblue;
+    margin: 20px;
+    position: absolute;
+    left: 10px;
+    top: 0;
+  }
+}

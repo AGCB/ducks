@@ -1,0 +1,33 @@
+.games-page {
+  height: 80px;
+  width: 30%;
+  background-color: rgba(25,25,25,.87);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  transition: background-color .9s;
+  &:hover {
+    background-color: rgba(198,75,65,.9);
+  }
+  * {
+    margin: 20px;
+    text-decoration: none;
+    color: lightblue;
+    transition: color .9s;
+    font-size: 20px;
+    &:hover {
+      color: cyan;
+    }
+    &:active {
+      color: rgba(200,200,200,.5);
+    }
+    &:visited {
+      color: rgba(200,200,200,.5);
+    }
+
+  }
+  .snake-game {
+    width: 20%;
+  }
+}

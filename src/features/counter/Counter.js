@@ -17,6 +17,7 @@ export function Counter() {
   return (
     <div>
       <div className={styles.row}>
+        <span>Default usage of reduxjsToolkit used by CRA -->></span>
         <button
           className={styles.button}
           aria-label="Increment value"
@@ -55,6 +56,7 @@ export function Counter() {
           Add Async
         </button>
       </div>
+      <span>you get this usage with <code>npx create-react-app projectName --template redux</code></span>
     </div>
   );
 }

@@ -1,0 +1,21 @@
+.App {
+  height: 95vh;
+  width: 96vw;
+  border: 1px solid orange;
+  .App-header {
+    border: 1px solid red;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+
+    img {
+      width: 50px;
+      border: 1px solid lightblue;
+      margin: 20px;
+      position: absolute;
+      left: 10px;
+      top: 0;
+    }
+  }
+}

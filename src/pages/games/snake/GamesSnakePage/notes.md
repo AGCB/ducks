@@ -1,5 +1,5 @@
 # snake
-
+- add initialState
   - pull up the counterSlice and duplicate everything. To start, we just want boolean state added to redux.
   - what is the least amount of changes needed for this?
     - snake reducer needs to be passed to the store.
@@ -28,3 +28,8 @@
         - return whatever slice you want.
         - in this case "state" is root level of your store.
       - export default snakeSlice.reducer
+
+- create snake
+  - array of x/y coords.
+  - position absolute changes for movement
+  - 

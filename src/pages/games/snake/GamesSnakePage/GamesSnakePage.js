@@ -11,7 +11,7 @@ import Snake from './components/Snake/Snake.js';
 function GamesSnakePage() {
   const toggle = useSelector(snakeToggleValue);
   const dispatch = useDispatch();
-  let snakeSegments = [[5,5],[5,6]];// TODO: GRAB THIS FROM REDUX INSTEAD.
+  let snakeSegments = [[25,5],[25,325]];// TODO: GRAB THIS FROM REDUX INSTEAD.
   // const snakeSegments = useSelector(snakeSegmentsFromStore);
 
   function handleSnakeToggleButton() {

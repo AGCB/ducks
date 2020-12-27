@@ -11,10 +11,10 @@ function Snake({segments}) {
           return (
             <div style={{
               "position": "absolute",
-              "top": segment[0],
-              "left": segment[1]*100,
-              "width": "50px",
-              "height": "50px",
+              "top": segment[1],
+              "left": segment[0],
+              "width": "10px",
+              "height": "10px",
               "backgroundColor": "blue",
             }}>x</div>
           )
